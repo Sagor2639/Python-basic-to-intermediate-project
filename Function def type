@@ -1,0 +1,85 @@
+#funstion is used for reuseability of code (as much as you need)
+#function also called methods.subroutines or procedure
+#function accept data, process it as per logic and then provide output
+#component of fun:
+#function declaration, defination and calling
+
+# def is a keyword which is used to create fun in python
+'''
+def First_fun(): #here first_fun is the declaration of function
+      print("good")
+      print("best")   #  defination of fun 
+      print(45+55)
+First_fun()  #function calling
+First_fun()  #function calling
+First_fun()  #function calling
+'''
+#second example
+#doc string
+def add(x,y): #parameter is used when we define the function/ sometimes it is called formal parameter
+     """This is addition"""
+    print("the addition of two num is", x+y)
+    
+add(23,34) #argument that is passing at the time of function calling/ it is called actual parameter
+
+print(addition.__doc__)
+
+
+##Types of functions==============================================
+
+
+#two types of fun is there one is Inbuilt fun and another is user defined
+#used defined fun is 7 type
+#no argument fun
+#argument based fun
+#position argument fun
+#keyword argument fun
+#default argument fun
+#variable length fun
+#keyword variable length fun
+
+
+#No argument function**
+'''
+def my_fun():
+    a = 45
+    b= 34
+    print("sum==>", a+b)
+my_fun()
+'''
+
+#Argument based fun**
+
+#Positional Argument Function - Here arguments pass in parameter positionally
+def New(data1,data2,data3,data4):  #Here we have 4 Parameters(Formal Parameters)
+    print("sub==",data1-data2)
+    print("multiply==",data3*data4)
+    print("add==",data2+data4)
+
+New(45,65,0.8,8) #we pass 4 arguments(Actual Parameters)
+
+
+def old(data1,data2,data3,data4):  #Here we have 4 Parameters(Formal Parameters)
+    print("mod==",data1%data2)
+    print("div==",data3/data4)
+    print("exp==",data2**data4)
+
+old(45,65,0.8,8) #we pass 4 arguments(Actual Parameters)
+"""
+
+
+#keyword Argument functions=========================
+def Bio(name,age,roll,city): #parameters
+    print("Hello",name,"Your Roll is",roll,"and Age is",age,"and city is",city)
+
+Bio("Rahul",25,1253,"Delhi") #Arguments
+
+#Now apply Keyword arguments
+Bio("Sam",roll = 785,city="Mumbai",age = 25) #here roll and age is keyword
+
+#Now try to combine Position and Keyword Functions at one place
+#Bio(roll = 782,24,name = "tony","Goa")  #It is not possible because positional arguments follows keyword agrs
+#Bio("Nishant",7892,age = 25,city = "Noida") # It is also not possible TypeError: Bio() got multiple values for argument 'age'
+Bio("Rahul",city = "XYZ",roll = "787ASDD",age = 78)  #its is proper combination for Positional with Keyword Function
+#First Pass all positional and then Keyword
+
