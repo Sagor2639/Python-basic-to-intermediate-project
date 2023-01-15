@@ -83,3 +83,48 @@ Bio("Sam",roll = 785,city="Mumbai",age = 25) #here roll and age is keyword
 Bio("Rahul",city = "XYZ",roll = "787ASDD",age = 78)  #its is proper combination for Positional with Keyword Function
 #First Pass all positional and then Keyword
 
+#default argument function==================
+
+#the valu is fixed with the data at the time of defining of function
+
+def con( city = "NY", Sector = "err", Add ="456wer"):
+    
+    print("your city is", city, "with sector code", Sector, "and the address is", Add)
+    
+con() #it is default value 
+con(city ="Dhaka")
+con("Chittagong", "16323ER", "Mirpur")
+con("Cumilla", Add ="Bramonbaria") #combine position and default arguments
+
+
+#variable length function=====================
+
+#it accept multiple data in single parameter
+
+#we pass the parameter like this e.g:(*x) x is parameter with astric and this represent variable length
+#it is consider as (*args)
+
+def fars(*y):
+    print("y=", y, type(y)) #return type is tuple
+    
+fars()
+fars(45, 38745, "lol") #return type is tuple
+
+#if we have variable length func with positinal args
+
+#def vars(*y, a): #the variable a has to be in the first place 
+def fars1(a,*y):
+    print("y=", y)
+    
+#vars(a="mumbai", 3234545. 24545,) #SyntaxError: invalid syntax / SyntaxError: positional argument follows keyword argument
+
+#keyword variable func ===================
+
+#syntx ==== **a (kyword args)(variable argument)
+
+def go(**a): #this is a keyword variable length unc(**kwargs)
+        print("go==", a, type(a))
+
+go(a=23, b=34, c= [3,4,5], d= "this is me")
+
+
