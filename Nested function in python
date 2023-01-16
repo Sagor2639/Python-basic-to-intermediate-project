@@ -1,0 +1,56 @@
+#Nester function in python
+#func inside func
+
+def mug(a):
+    print("First statement is", a)
+    def jug(b):
+        print("second statement is ", b)
+
+    print("third statement is ", a)
+    jug(68)
+
+mug(45)
+
+#note that outer func always call inner func
+#we never execute inner func
+#we execute outer then call inner 
+
+def A(a):
+    print("First statement is", a)
+    def B(b):
+        print("second statement is ", b)
+        def C(c):
+            print("third statement is ", c)
+            def D(d):
+                print("fourth statement is ", d)
+            D(2)
+        C(6)
+    B(4)
+A(1)
+
+
+#nested with return function
+def X(a,b):
+    print("I am outer value")
+    def Y(data):
+        return data**a
+    return Y(b)
+print("the value is ==", X(3,2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
