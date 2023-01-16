@@ -1,0 +1,48 @@
+#return statement in python
+"""
+function which accept some data, after that process it and then with the help of 
+return statement the final output return to the caller function
+"""
+
+"""
+def call(a,b):
+    return a*b
+
+print(call(3,4))
+
+a = call(100,200)
+print(a)
+
+def new(a,b): #example 2
+    c = a +b
+    return c
+    x =5       #after return statement nothing is applicable in the same line
+    print(x)   # in a single func one return statement can be used only
+
+print(new(3,5)) 
+
+def opr(a,b):     #exmp 3 multiple operations can be possible with return statement
+    return a +b, a-b, a*b, a/b
+
+a,b,c,d = opr(2,3)
+print(a,b,c,d)
+print(opr(2,3))
+
+def new2(a,b): #exmp 3 
+    if a%b == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(new2(9,2))
+"""
+def test(a,b): #exmp 4 
+    print(a+b)
+
+test(2,3)
+
+
+
+
+
+
+
