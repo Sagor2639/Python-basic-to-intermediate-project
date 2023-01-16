@@ -7,7 +7,7 @@ data = " I am Global Value"  #Global variable
 
 def test1( ):
     print("Access Global Value Inside function = ",data)
-    data= 45  #Local data 
+    data= 45  #Local data
     #data+=1 not possible 
     print("Local data=====",data)
 def test2( ):
