@@ -1,6 +1,6 @@
-#practice question
+#practice questin
 #write a program to check the upper and lower case of any input string
-
+"""
 ===========================================
 
 def check(data):
@@ -31,7 +31,7 @@ def check_strng(data):
     data = "".join(data)
     print(data)
 check_strng("hello, zebra, cool, jam, vsdk, best, success, gun")
-
+"""
 
 #wap to check number of local variables in a function
 
